@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* HEADER */
+
+.header-logo {
+    margin-top: 20px;
+}
+
+.main-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-heading i {
+    font-size: 2rem;
+}
+
+/* CONTAINER */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+/* BOXES */
+
+.box {
+    border: 1px solid #000;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0px 1px 35px -12px #9c9c9c;
+}
+
+/* BOX-1 */
+
+.box-1 {
+    position: relative;
+    width: 400px;
+}
+
+.img {
+    background-image: url('./green.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    max-width: 100%;
+    height: 500px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.textbox {
+    position: absolute;
+    left: 48%;
+    top: 54%;
+    word-wrap: break-word;
+    max-width: 190px;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    overflow: hidden;
+}
+
+/* BOX-2 */
+
+.box-2 {
+    width: 400px;
+    padding: 10px 20px;
+}
+
+.variant-header h2 {
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:325px) {
+    .container {
+        margin: auto;
+    }
+
+    .box {
+        width: 300px;
+    }
+}
+
+
+.shirt-color {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.shirt-color button {
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.shirt-color button:hover {
+    transform: scale(1.2);
+}
+
+.black-btn {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.green-btn {
+    background-color: #26ab47;
+    border: 1px solid #26ab47;
+}
+
+.gray-btn {
+    background-color: #c9c9c9;
+    border: 1px solid gray;
+}
+
+.yellow-btn {
+    background-color: rgb(255, 201, 8);
+    border: 1px solid rgb(255, 201, 8);
+}
+
+.purple-btn {
+    background-color: #bb49bb;
+    border: 1px solid purple;
+}
+
+.textarea {
+    margin: 10px 0;
+}
+
+#inputText {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.btn button {
+    padding: 3px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background: #d2d1d1;
+    border-color: #d2d1d1;
+}
+
+/* TEXT ON SHIRT */
+.textstyle-btn h2 {
+    font-size: 1.5rem;
+}
+
+
+.btn input {
+    width: 3.5rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.font-size {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.font-size h2 {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.counter button {
+    border: none;
+    background-color: #fff;
+    border-bottom: 2px solid #999;
+    margin: 0 20px;
+}
+
+.counter button:hover {
+    background-color: #fff;
+    border-color: #999;
+}
+
+#counter-input {
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid #bbbbbb;
+    padding: 10px 10px;
+    margin: 0 10px;
+}
+
+#counter-input:focus {
+    outline: none;
+}
+
+@media screen and (max-width:325px) {
+
+    .btn button,
+    input {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .box-1 {
+        width: 100%;
+    }
+
+    .box-2 {
+        width: 100%;
+    }
+}

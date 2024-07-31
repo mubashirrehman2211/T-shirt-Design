@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>T-Shirt Designer</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <div class="header-logo">
+        <h1 class="main-heading">
+            <i class="fa-solid fa-shirt"></i>
+            T Shirt
+            <span style="color: blue; font-size: 2rem;">Designer</span>
+        </h1>
+    </div>
+
+    <!-- CONTAINER -->
+
+    <div class="container">
+
+        <!-- BOX-1 -->
+
+        <div class="box box-1">
+            <div class="textbox">
+                <p id="textOnShirt">Your text will appear here</p>
+            </div>
+            <div class="img">
+            </div>
+        </div>
+
+        <!-- BOX-2 + SHIRT-PROPERTIES -->
+
+        <div class="box box-2">
+            <div class="shirt-variant">
+                <div class="variant-header">
+                    <h2>Shirt Variant</h2>
+                </div>
+
+                <!-- SHIRT VARIANT -->
+
+                <div class="shirt-color">
+                    <button onclick="toggleShirt1()" class="black-btn"></button>
+                    <button onclick="toggleShirt2()" class="green-btn"></button>
+                    <button onclick="toggleShirt3()" class="gray-btn"></button>
+                    <button onclick="toggleShirt4()" class="purple-btn"></button>
+                    <button onclick="toggleShirt5()" class="yellow-btn"></button>
+                </div>
+            </div>
+
+            <!-- TEXT STYLE -->
+
+            <div class="text-style">
+                <div class="textstyle-btn">
+                    <h2>Text Style</h2>
+                </div>
+
+                <!-- TEXT ON SHIRT -->
+
+                <div class="textarea">
+                    <textarea placeholder="Your text will appear here." name="textarea" id="inputText"
+                        oninput="enterText()" cols="35" rows="6"></textarea>
+                </div>
+
+                <!-- COLOR PICKER -->
+
+                <div class="btn-container">
+                    <div class="color-picker btn">
+                        <input type="color" id="textColor" oninput="changeColor()">
+                    </div>
+
+                    <!-- FONT BOLD -->
+
+                    <div class="bold-btn btn">
+                        <button onclick="textBold()">
+                            <strong>B</strong>
+                        </button>
+                    </div>
+
+                    <!-- FONT ITALIC -->
+
+                    <div class="italic-btn btn">
+                        <button onclick="textItalic()">
+                            <strong>I</strong>
+                        </button>
+                    </div>
+
+                    <!-- TEXT ALIGN LEFT -->
+
+                    <div class="align-left btn">
+                        <button onclick="alignLeft()">
+                            <strong><i class="fa-solid fa-align-left"></i></strong>
+                        </button>
+                    </div>
+
+                    <!-- TEXT ALIGN CENTER -->
+
+                    <div class="align-center btn">
+                        <button onclick="alignCenter()">
+                            <strong><i class="fa-solid fa-align-justify"></i></strong>
+                        </button>
+                    </div>
+
+                    <!-- TEXT ALIGN RIGHT -->
+
+                    <div class="align-right btn">
+                        <button onclick="alignRight()">
+                            <strong><i class=" fa-solid fa-align-right"></i></strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FONT SIZE BUTTON -->
+
+            <div class="font-size">
+                <h2>Font Size</h2>
+                <div class="btn">
+                    <button onclick="changeSize(id)" id="minus">
+                        <strong>-</strong>
+                    </button>
+                </div>
+
+                <div class="counter btn">
+                    <input id="counter-input" onchange="changeSize(id)" type="text" maxlength="2" value="16"
+                        placeholder="px">
+                </div>
+
+                <div class="btn">
+                    <button onclick="changeSize(id)" id="plus">
+                        <strong>+</strong>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a458419c75.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
